@@ -55,7 +55,7 @@ project-specific work the user authors fresh tasks for.
 
 - The bootstrap left `current-state.md > Bootstrap Decisions` populated with the framework, entity,
   repo, domain, AWS account, owner, feature-flag id, and bootstrap id — start there.
-- The first deploy reached `https://main.d2nejrvuylyfp.amplifyapp.com` (verified during bootstrap completion).
+- The first deploy reached `https://pending-first-deploy.example/` (verified during bootstrap completion).
 - All seeded children carry `backlog_state: refining` so review is required before they enter
   `todo`.
 

@@ -66,7 +66,7 @@ that, which is why the browser step below is not optional.
   **deploy role** when the workflow builds and Amplify only deploys, or the **Amplify
   service role** when Amplify builds the repo directly. Getting the wrong one looks
   identical to a missing parameter.
-- Sign in at `https://main.d2nejrvuylyfp.amplifyapp.com` and perform one authenticated read and one write.
+- Sign in at `https://pending-first-deploy.example/` and perform one authenticated read and one write.
 
 ## Out Of Scope
 
@@ -77,7 +77,7 @@ that, which is why the browser step below is not optional.
 
 ## Current State And Evidence
 
-- Live URL: `https://main.d2nejrvuylyfp.amplifyapp.com`
+- Live URL: `https://pending-first-deploy.example/`
 - Repo: `https://github.com/productsweet-bootstrap-e2e-app/ai6p-2160-liveproof`
 - Contract + rules: `.agent/knowledge.md > External Backend Contract`.
 - Generator: `scripts/gen-aws-config.mjs` (reads the map; fails closed).
@@ -111,13 +111,13 @@ flake as suspicious and investigate before retrying.
    prefix — the deploy role, or the Amplify service role if Amplify builds the repo
    directly. A parameter that exists but is unreadable fails the build identically, and
    the failure names the parameter, not the principal.
-4. Open `https://main.d2nejrvuylyfp.amplifyapp.com`, sign in with a user from the existing pool, and perform one read
+4. Open `https://pending-first-deploy.example/`, sign in with a user from the existing pool, and perform one read
    and one write. Confirm the network calls hit the expected endpoint.
 5. Record the outcome per environment in Completion Notes.
 
 ## Verification Plan
 
-- The frontend deploy is green and `curl -sSf https://main.d2nejrvuylyfp.amplifyapp.com` returns 200.
+- The frontend deploy is green and `curl -sSf https://pending-first-deploy.example/` returns 200.
 - Every declared parameter resolves in every target environment.
 - An authenticated read and write succeed against the deployed low environment.
 
