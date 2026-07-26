@@ -46,7 +46,7 @@ last_updated: "2026-07-26"
   `352438994403` (region `ap-southeast-2`). The backend is deployed and operated
   outside this project.
 - **Repository:** https://github.com/productsweet-bootstrap-e2e-app/ai6p-2160-liveproof
-- **Custom domain:** pending-bind-custom-domain
+- **Custom domain:** https://main.d2nejrvuylyfp.amplifyapp.com
 - **Owner:** productsweet-bootstrap-e2e-app
 - **Auth:** an EXISTING Cognito user pool owned outside this project. Its sign-up policy,
   app client, and claims are that owner’s contract — this repo consumes them.

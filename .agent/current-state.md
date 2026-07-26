@@ -1,8 +1,8 @@
 ---
 last_updated: "2026-07-26"
-phase: bootstrapping
+phase: live
 health: green
-tests_passing: 0
+tests_passing: 1
 active_objectives: ["BS280-001"]
 blockers: []
 ---
@@ -28,8 +28,9 @@ blockers: []
 - [Entry Points for Agents](#entry-points-for-agents)
 
 ## At a Glance
-- **Phase:** Bootstrapping — the project was just provisioned and the hello-world site is live.
+- **Phase:** Live — first deploy verified end-to-end against the bound URL.
 - **Health:** Green — initial build passed; one Note vertical slice, no real content yet.
+- **Deploy verified:** HTTPS 200 at https://main.d2nejrvuylyfp.amplifyapp.com.
 - **Next up:** Refine the seeded `Bootstrap Follow-ups` epic in `.kanban/backlog/`.
 - **Blockers:** None.
 
@@ -45,9 +46,9 @@ Captured at bootstrap time and pinned here so the project starts with real conte
 - **Default Branch:** `main`
 - **AWS Account:** `352438994403`
 - **AWS Region:** `ap-southeast-2`
-- **Amplify App ID:** `pending-amplify-create`
-- **Live URL:** https://pending-first-deploy.example/
-- **Custom Domain:** pending-bind-custom-domain
+- **Amplify App ID:** `d2nejrvuylyfp`
+- **Live URL:** https://main.d2nejrvuylyfp.amplifyapp.com
+- **Custom Domain:** https://main.d2nejrvuylyfp.amplifyapp.com
 - **Owner:** productsweet-bootstrap-e2e-app
 - **Bootstrap Feature Flag:** `bs-ai6p-2160-lp-2026-07-26T04-51-56Z`
 - **Bootstrap ID:** `bs-ai6p-2160-lp-2026-07-26T04-51-56Z`
@@ -55,7 +56,7 @@ Captured at bootstrap time and pinned here so the project starts with real conte
 ## Shipped Capabilities
 
 ### Frontend
-- React + Vite SPA on AWS Amplify app `pending-amplify-create` connected to `main`, with an SPA
+- React + Vite SPA on AWS Amplify app `d2nejrvuylyfp` connected to `main`, with an SPA
   rewrite rule so deep links resolve to `index.html`.
 - One authenticated CRUD path over a Note entity (sign in, create, list).
 - Auto-build on `main` is disabled — the deploy workflow is the only release path.

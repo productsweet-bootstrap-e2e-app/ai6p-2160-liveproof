@@ -3,7 +3,7 @@
 A React + Vite single-page app wired to this tenant's AppSync GraphQL API and
 Cognito user pool, bootstrapped by Product Sweet (AI6P-1611 webapp starter).
 
-- **Live:** https://pending-first-deploy.example/
+- **Live:** https://main.d2nejrvuylyfp.amplifyapp.com
 - **Framework:** React + Vite 5
 - **Hosting:** AWS Amplify (account `352438994403`)
 - **Backend:** see `../../backend/` (AppSync + Lambda + DynamoDB + Cognito CDK app)
