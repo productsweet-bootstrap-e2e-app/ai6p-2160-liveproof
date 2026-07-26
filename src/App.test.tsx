@@ -69,4 +69,11 @@ describe('App', () => {
     expect(el).toBeInstanceOf(window.HTMLElement);
     expect(el.tagName).toBe('DIV');
   });
+
+  it('AI6P-2112-2113-LIVE-PROOF-MARKER — this assertion exists only in the proof PR', () => {
+    // Named uniquely so the pr-gate log proves the test step ran THIS PR's code.
+    // A gate that reports success for a step it did not run is the defect
+    // AI6P-2113 exists to close; a cached or skipped run cannot print this name.
+    expect(1 + 1).toBe(2);
+  });
 });
