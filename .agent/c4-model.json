@@ -94,7 +94,7 @@
         "Authenticate users against the existing Cognito user pool",
         "Call the existing GraphQL API with the user-pool auth token",
         "Read its endpoint + Cognito ids from build-time-generated config (never hardcoded)",
-        "Serve from AWS Amplify Hosting at https://main.d2nejrvuylyfp.amplifyapp.com",
+        "Serve from AWS Amplify Hosting at https://pending-first-deploy.example/",
         "Render the entire app client-side — every route is served from the same `index.html`; configure the Amplify rewrite rule so deep links fall through to the SPA"
       ],
       "relationships": [
